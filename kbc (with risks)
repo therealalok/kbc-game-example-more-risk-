@@ -1,0 +1,30 @@
+choice=input("Do you want to play(y/n)?  ").lower()
+score=0
+if(choice=="y"):
+    print("Let's start.")
+
+    q1=input(" Who was the first king of unified Nepal? ").lower()
+    if(q1=="prithvi narayan shah"):
+        score+=5000
+        print(f"Correct! You have won Rs. {score}")
+    else:
+        print(f"Incorrect! You have won Rs. {score}")
+        quit()
+    risk= input("Do you want to take a risk? If you write the correct answer, you will be awarded Rs. 5000 more, otherwise, you will lose the amount you have won till now. (y/n): ").lower()
+    if(risk=="y"):
+        q2=input(" Ballon dor winner of 2017? ").lower()
+        if(q2=="cristiano ronaldo"):
+         score+=5000
+         print(f"Correct! You have won Rs. {score}")
+        else:
+         score-=score
+         print(f"Incorrect! You have won Rs. {score}")
+         quit()
+    else:
+       print(f"You have won Rs. {score}")
+
+
+else:
+   quit()
+
+    
